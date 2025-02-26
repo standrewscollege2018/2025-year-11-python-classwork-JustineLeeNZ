@@ -5,6 +5,7 @@
 # variable to control while loop
 keep_asking = True
 
+# keep looping until valid age entered
 while keep_asking == True:
     # ask for age, must be > 0
     age = int(input("Age? "))
@@ -16,7 +17,7 @@ while keep_asking == True:
         print("Enter an age > 0")
 
 
-
+# have valid age, check if can site licence
 if age > 16:
         print("You can sit your Learners licence")
 else:
