@@ -1,7 +1,7 @@
 ''' examples of while loops - Justine Lee '''
 
 # example of while loop syntax but should really use for loop
-'''
+
 number = 0
 
 while number < 10:
@@ -9,7 +9,7 @@ while number < 10:
     number = number + 1
 
 print("All done")
-'''
+
 # using a Boolean
 
 # set Boolean to True to control loop
