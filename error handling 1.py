@@ -8,17 +8,20 @@ keep_asking = True
 # keep looping until valid age entered
 while keep_asking == True:
     # ask for age, must be > 0
-    age = int(input("Age? "))
 
-    # check for boundary
-    if age > 0 and age<=100:
-        keep_asking = False
-    else:
-        print("Enter an age > 0")
+    try:
+        age = int(input("Age? "))
+        # check for boundary
+        if age > 0 and age<=100:
+            keep_asking = False
+        else:
+            print("Enter an age > 0 and < 100")
 
+    except ValueError:
+        print("Enter an integer")
 
 # have valid age, check if can site licence
-if age > 16:
+if age >= 16:
         print("You can sit your Learners licence")
 else:
     print("sorry you have to wait")
